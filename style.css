@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.team .ribbon {
+    position: absolute;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    width: 10px;
+}
+
+.team .ribbon-1 {
+    width: 100px;
+    height: 50px;
+    background: #db29af;
+    top: 51px;
+    right: -9px;
+}
+
+.ribbon-1::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    /*border-left: 5px solid #fff;*/
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    /*border-bottom: 5px solid #fff;*/
+}
+
+.ribbon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    border-left: 25px solid #fff;
+    border-right: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+.team {
+    margin: 50px;
+    height: 2978px;
+    border: 1px solid black;
+}
+
+.team-box {
+    text-align: center;
+}
+
+.team-box h1 {
+    display: inline-block;
+    padding: 10px 80px;
+    margin-top: 100px;
+    background-color: #db29af;
+    border: 1px solid pink;
+    border-radius: 7px;
+}
+
+.team-box p {
+    margin-top: 20px;
+}
+
+.team-box p span {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border: none;
+    border-top: 4px dotted #db29af;
+    margin: 30px 400px;
+}
+
+.team-management h2 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    display: inline-block;
+    background: #db29af;
+    padding: 10px 70px;
+    margin: 40px;
+    margin-left: 400px;
+    border: 1px solid #db29af;
+    border-radius: 7px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.team-cards .team-card img {
+    margin-bottom: 20px;
+    background-color: #000;
+    color: grey;
+    border-radius: 50%;
+
+}
+
+.team-cards .team-card h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-cards .team-card p {
+    text-align: center;
+    color: #db29af;
+    font-size: 12px;
+}
+
+.team-vp {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.team-vp .team-card {
+    margin: 30px;
+}
+
+.team-vp .team-card .image-section img {
+    border-radius: 50%;
+}
+
+.team-detail h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-detail p {
+    text-align: center;
+    color: #db29af;
+    font-size: small;
+}
+
+.team-detail p span {
+    display: flex;
+    justify-content: center;
+}
+
+.middle {
+    width: 100px;
+    height: 51px;
+    background: #db29af;
+    rotate: 180deg;
+}
+
+.middle-team {
+    margin-left: 80px;
+}
+
+.middle-team h3 {
+    text-align: center;
+}
+
+.ribbon {
+    position: absolute;
+    width: 100px;
+
+}
+
+.wrapper .ribbon-3 {
+    width: 100px;
+    height: 50px;
+    background: #db29af;
+    bottom: -1600px;
+    right: -10px;
+}
+
+.ribbon-3::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    /*border-left: 5px solid #db29af;*/
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    /*border-bottom: 5px solid #db29af;*/
+}
+
+.ribbon-3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    border-left: 25px solid #fff;
+    border-right: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+@media screen and (max-width:800px) {
+    .team-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team {
+        height: auto;
+    }
+
+    .team h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .team-vp {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .team-vp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    team {
+        text-align: center;
+    }
+}
